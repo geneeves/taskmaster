@@ -30,6 +30,10 @@ body {
   padding-top: 25px;
 }
 
+#task-list li:hover{
+  color: #ffffff;
+}
+
 #completed-tasks {
   text-decoration: line-through;
 }
@@ -41,7 +45,7 @@ body {
   font-size: 2.2em;
 }
 
-h1, h2, h5 {
+h1, h2, h4, h5 {
   color: #FAF9AF;
   font-family: 'Permanent Marker', cursive;
   

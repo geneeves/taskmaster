@@ -3,22 +3,9 @@ var Task = {
     this.description = description;
   },
 
-  // acceptable but not great:
-  // setStatus: function(newStatus) {
-  //   this.status = newStatus;
-  // },
-
-  // bad:
-  // setComplete: function(complete) {
-    // this.complete = complete;
-  // }
-
   setComplete: function() {
     this.complete = true;
   }
-  // setIncomplete: function() {
-  //   this.complete = false;
-  // }
 };
 
 var List = {
@@ -34,10 +21,6 @@ var List = {
     this.name = name;
   }
 
-  // removeList: function() {
-  //   this.tasks = [];
-  //   this.name = "";
-  // }
 };
 
 $(function() {
@@ -87,18 +70,6 @@ $(function() {
       $(".current-list-name").empty().append(currentList.name);
       populateList(currentList);
     });
-
-
-    // // le clear list prompt
-    // $(".current-list-name").last().click(function() {
-    //   currentList = taskList;
-
-    //   var deleteAnswer = confirm("Would you like to delete this list?");
-    //   if (deleteAnswer) {
-    //     removeList(currentList);
-    //     return false;
-    //   }
-    // });
 
     $(".enter-tasks").show();
     return false;
