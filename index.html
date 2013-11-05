@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Your To Do List</title>
+  </head>
+  <body>
+    <div class="hero-unit">
+      <h1>Get It Done Already!</h1>
+
+      <form id="list">
+        <input id="new-list" type="text" placeholder="Create a new to do list"></input>
+        <button type="submit" class="btn btn-primary">New List</button>
+      </form>
+      <ul id="list-binder">
+      </ul>
+
+      <div class="enter-tasks">
+        <h5>Select your list to add tasks!</h5>
+        <form id="task">
+          <input id="tasks" type="text" placeholder="Enter a task"></input>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <h2 class="current-list-name"></h2>
+        <ol id="task-list">
+        </ol>
+       
+        <div class="completed-task-field">
+          <h5>Done!</h5>
+        </div>
+          <ul id="completed-tasks"></ul>
+      </div>
+    </div>
+  </body>
+</html>
