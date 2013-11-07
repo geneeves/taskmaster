@@ -20,7 +20,6 @@ var List = {
   nameList: function(name) {
     this.name = name;
   }
-
 };
 
 $(function() {
@@ -95,11 +94,3 @@ $(function() {
     return false;
   });
 });
-
-
-// notes for next steps:
-//set tasks as incomplete so that you can prioritize etc
-
-
-
-
