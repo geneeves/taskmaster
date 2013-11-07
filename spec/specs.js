@@ -37,15 +37,4 @@ describe("List", function() {
       list.name.should.equal("Books To Read");
     });
   });
-
-  describe("removeList", function() {
-    it("removes the list name and list", function() {
-      var list = Object.create(List);
-      list.nameList("");
-      list.createList();
-      list.tasks.length = 0;
-      list.name.should.equal("");
-      list.tasks.should.eql([]);
-    });
-  });
 });
